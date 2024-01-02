@@ -1,6 +1,5 @@
 import fetch from 'node-fetch';
 // new excise API
-
 export const getMovie = (args) => {
   // console.log(args)
   const [, idPart] = args.queryKey;
@@ -63,8 +62,6 @@ export const searchMovies = async (searchTerm) => {
     throw error
  });
 };
-
-
 
 
 export const getMovieImages = ({ queryKey }) => {

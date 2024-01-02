@@ -1,8 +1,7 @@
 {
     "env": {
         "es2021": true,
-        "node": true,
-        "mocha": true
+        "node": true
     },
     "extends": [
         "eslint:recommended",
@@ -15,12 +14,10 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "mocha"
+        "react"
     ],
     "rules": {
         "semi": 1,
         "no-console": "off"
-        // Other rules...
     }
 }
