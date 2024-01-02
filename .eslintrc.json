@@ -1,13 +1,37 @@
+// {
+//     "env": {
+//         "es2021": true,
+//         "node": true
+//     },
+//     "extends": "eslint:recommended",
+//     "parserOptions": {
+//         "ecmaVersion": 13,
+//         "sourceType": "module"
+//     },
+//     "rules": {
+//         "semi": 1,
+//         "no-console": "off"
+//     }
+// }
+
 {
     "env": {
         "es2021": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "overrides": [
+    ],
     "parserOptions": {
-        "ecmaVersion": 13,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
         "semi": 1,
         "no-console": "off"
