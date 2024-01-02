@@ -1,8 +1,8 @@
 import userModel from '../api/users/userModel';
 import users from './users';
 import dotenv from 'dotenv';
-import genreModel from '../api/genres/genreModel'
-import genres from './genres'
+import genreModel from '../api/genres/genreModel';
+import genres from './genres';
 import movieModel from '../api/movies/movieModel';
 import movies from './movies.js';
 
@@ -47,6 +47,6 @@ export async function loadMovies() {
 
 if (process.env.SEED_DB === 'true') {
   loadUsers();
-  loadGenres()
+  loadGenres();
   loadMovies();//ADD THIS LINE
 }
